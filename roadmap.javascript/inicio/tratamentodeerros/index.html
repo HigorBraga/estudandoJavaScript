@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Erros</title>
+</head>
+<body>
+    <header>
+        <h1>Usando o catch para tratar erros</h1>
+    </header>
+
+
+    <main>
+        <section>
+            <p id="mensagem"></p>
+            <p id="txt"></p>
+        </section>
+
+
+        <section>
+            <h2>Usando o throw e finally para personalizar as mensagem de erros.</h2>
+            <div>
+                <label for="usuario">Usuário:</label>
+                <input type="text" name="usuario" id="usuario">
+            </div>
+
+            <div>
+                <button type="submit" onclick="entrar()">Entrar</button>
+                <button type="reset">Reset</button>
+            </div>
+
+            <p id="resul"></p>
+        </section>
+    </main>
+
+    <script src="erros.js"></script>
+</body>
+</html>
