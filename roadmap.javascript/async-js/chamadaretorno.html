@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamada Retorno</title>
+</head>
+<body>
+    <main>
+        <section>
+            <p id="chamada"></p>
+        </section>
+
+
+        <section>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <script>
+        function mostrarMensagem(mensagem) {
+            let chamada = window.document.getElementById('chamada');
+
+            chamada.innerHTML = mensagem;
+        }
+
+
+        function mensagemUm() {
+            mostrarMensagem("Olá");
+        }
+
+
+        function mensagemDois() {
+            mostrarMensagem("Mundo!!!");
+        }
+
+        mensagemUm();
+        mensagemDois();
+
+        mensagemDois();
+        mensagemUm();
+
+
+
+
+        /*
+        function mostrarResultado(soma) {
+            let resultado = window.document.getElementById('resultado');
+        }
+
+
+        function somarValores(num1, num2) {
+            let soma = num1 + num2;
+            return soma;
+        }
+
+
+        let resultado = somarValores(5, 2);
+        mostrarMensagem(resultado);
+        */
+
+        /*
+        function mostrarResultado(soma) {
+            let resultado = window.document.getElementById('resultado');
+
+            resultado.innerHTML = soma;
+        }
+
+
+        function somarValores(num1, num2) {
+            let soma = num1 + num2;
+            mostrarResultado(soma);
+        }
+
+        somarValores(125, 47);
+
+        */
+
+        function mostarResultado(soma) {
+            let resultado = window.document.getElementById('resultado');
+            resultado.innerHTML = soma;
+        }
+
+
+        function somarValores(num1, num2, Callback) {
+            let soma = num1 + num2;
+            Callback(soma);
+        }
+
+        somarValores(155, 124, mostarResultado);
+    </script>
+</body>
+</html>

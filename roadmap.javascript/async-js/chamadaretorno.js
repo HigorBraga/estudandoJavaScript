@@ -36,4 +36,23 @@ O problema com o segundo exemplo é que você não pode impedir que a função c
 
 Agora é hora de trazer um retorno de chamada.
 
+
+Chamadas de retorno de JavaScript
+Um retorno de chamada é uma função passada como um argumento para outra função.
+
+Usando um retorno de chamada, você pode chamar a função de calculadora ( myCalculator) com um retorno de chamada ( myCallback) e deixar a função de calculadora executar o retorno de chamada após o término do cálculo:
+
+
+No exemplo acima, myDisplayeré chamada de função callback .
+
+É passado myCalculator()como um argumento .
+
+Observação
+Ao passar uma função como argumento, lembre-se de não usar parênteses.
+
+Direita: minhaCalculadora(5, 5, meuDisplay);
+
+Errado:minhaCalculadora(5, 5, meuDisplay());
 */
+
+
