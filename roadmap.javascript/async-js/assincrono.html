@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assíncrono</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Funções Assíncronas em JS</h1>
+            <p id="resultado"></p>
+        </section>
+
+        <section>
+            <p id="mostrarHora"></p>
+        </section>
+    </main>
+    <script>
+        function mostrarResultado() {
+            let resultado = window.document.getElementById("resultado");
+            resultado.innerHTML = "Vou terminar mais tarde!";
+        }
+
+        setTimeout(mostrarResultado, 3000);
+
+
+        function mostrarHorario() {
+            let mostrarHora = window.document.getElementById("mostrarHora");
+            let dataAtual = new Date();
+            mostrarHora.innerHTML = dataAtual.getHours() + ":" + dataAtual.getMinutes() + ":" + dataAtual.getSeconds();
+        }
+
+        setInterval(mostrarHorario, 3000);
+    </script>
+</body>
+</html>
